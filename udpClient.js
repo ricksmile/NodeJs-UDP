@@ -1,7 +1,7 @@
 var dgram=require('dgram');
 var message=new Buffer('您好');
 var client=dgram.createSocket('udp4');
-client.send(message,0,message.length,5000,'localhost',function(err,bytes)
+client.send(message,0,message.length,5000,'localhost',function(err,bytes) //外網網卡
 {
   if (err) {
        console.log('發送數據失敗');
