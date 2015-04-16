@@ -15,6 +15,6 @@ server.on('message',function(msg,rinfo){
       console.log('服務器開始監聽,地址訊息為 %j',address);        
     });
     
-    server.bind(5000,'localhost');
+    server.bind(5000,'localhost'); //內網網卡
     
     
